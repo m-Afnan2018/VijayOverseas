@@ -1,0 +1,59 @@
+.section {
+    background: #fff8f1;
+    padding: 4rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* main box */
+.box {
+    border: 1.5px solid #d9a06a;
+    border-radius: 1rem;
+    padding: 1.8rem 2rem;
+    background: #fffaf4;
+}
+
+/* section heading */
+.box h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+    text-transform: uppercase;
+    color: #3b2a1a;
+}
+
+/* individual item */
+.item {
+    margin-bottom: 1.6rem;
+}
+
+.item:last-child {
+    margin-bottom: 0;
+}
+
+/* item heading */
+.item h5 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px dashed #d9a06a;
+    color: #3b2a1a;
+}
+
+/* description */
+.item p {
+    font-size: 0.72rem;
+    line-height: 1.6;
+    color: #6b5a4a;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+    .section {
+        grid-template-columns: 1fr;
+        padding: 3rem 1.5rem;
+    }
+}

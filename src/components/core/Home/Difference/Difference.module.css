@@ -1,0 +1,77 @@
+.section {
+    background: #fff8f1;
+    padding: 5rem 4rem;
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr;
+    gap: 3rem;
+    align-items: center;
+    color: #3b2a1a;
+}
+
+/* LEFT SIDE */
+.left h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.25;
+    max-width: 420px;
+    margin-bottom: 2rem;
+}
+
+.left h1 span {
+    color: #00b8c8;
+}
+
+.left img {
+    width: 100%;
+    max-width: 360px;
+}
+
+/* RIGHT SIDE GRID */
+.right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+}
+
+/* CARD */
+.card {
+    background: #fffaf4;
+    border: 1.5px solid #d9a06a;
+    border-radius: 1rem;
+    padding: 1.6rem 1.5rem;
+}
+
+/* CARD HEADING */
+.card h2 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+}
+
+/* CARD TEXT */
+.card p {
+    font-size: 0.72rem;
+    line-height: 1.6;
+    color: #6b5a4a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .section {
+        grid-template-columns: 1fr;
+        padding: 3rem 1.5rem;
+    }
+
+    .left {
+        text-align: center;
+    }
+
+    .left h1 {
+        margin: 0 auto 2rem;
+    }
+
+    .right {
+        grid-template-columns: 1fr;
+    }
+}
