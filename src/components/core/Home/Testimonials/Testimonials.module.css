@@ -1,0 +1,88 @@
+.section {
+    background: #fff8f1;
+    padding: 5rem 4rem;
+    text-align: center;
+    color: #3b2a1a;
+}
+
+/* small label */
+.section h5 {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: #7a5a3a;
+}
+
+/* main heading */
+.section h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+}
+
+.section h2 span {
+    color: #00b8c8;
+}
+
+/* grid */
+.grid {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+}
+
+/* card */
+.card {
+    background: #ffffff;
+    border: 1.5px solid #d9a06a;
+    border-radius: 1rem;
+    padding: 2.2rem 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* quote block */
+.quote {
+    margin-bottom: 1.5rem;
+}
+
+.quote img {
+    width: 28px;
+    height: auto;
+    margin-bottom: 0.8rem;
+}
+
+.quote p {
+    font-size: 0.75rem;
+    line-height: 1.7;
+    color: #5a4a3a;
+}
+
+/* author */
+.author {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    color: #000;
+}
+
+/* responsive */
+@media (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 3rem 1.5rem;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

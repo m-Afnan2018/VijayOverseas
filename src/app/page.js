@@ -8,6 +8,8 @@ import Range from "@/components/core/Home/Range/Range";
 import Difference from "@/components/core/Home/Difference/Difference";
 import Serve from "@/components/core/Home/Serve/Serve";
 import GetStarted from "@/components/core/Home/GetStarted/GetStarted";
+import Testimonials from "@/components/core/Home/Testimonials/Testimonials";
+import FAQ from "@/components/core/Home/FAQ/FAQ";
 
 export default function Home() {
     return (
@@ -20,6 +22,8 @@ export default function Home() {
             <Difference/>
             <Serve/>
             <GetStarted/>
+            <Testimonials/>
+            <FAQ/>
         </div>
     );
 }
