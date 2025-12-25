@@ -6,6 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
+    width: 100%;
 }
 
 /* dark overlay */
@@ -24,94 +25,119 @@
 
 /* headings */
 .hero h2 {
-    text-align: center;
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
+    font-family: var(--font-pilat);
+    font-weight: 600;
+    font-style: 'Demi';
+    font-size: 13px;
+    line-height: 20.8px;
+    letter-spacing: 3px;
+    vertical-align: middle;
     text-transform: uppercase;
+    text-align: center;
     color: #e5e5e5;
     margin-bottom: 0.75rem;
 }
 
 .hero h3 {
+    font-family: var(--font-reyork);
+    font-weight: 400;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 4.2rem;
     font-weight: 800;
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto 1rem;
     line-height: 1.2;
 }
 
 .hero h5 {
-    text-align: center;
     max-width: 700px;
+    font-family: var(--font-pilat);
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: -0.2px;
+    vertical-align: middle;
+    text-align: center;
     margin: 0 auto 1.75rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #e6e6e6;
     font-weight: 400;
 }
 
 /* CTA */
-.hero button {
+/* .hero button {
     display: block;
     margin: 0 auto 3rem;
     padding: 0.6rem 1.4rem;
-    border-radius: 999px;
     background: #00b8c8;
     color: #fff;
     border: none;
     font-size: 0.75rem;
     text-transform: uppercase;
     cursor: pointer;
+    opacity: 1;
+    font-family: var(--font-reyork);
+    border-radius: 0.5rem;
+    font-weight: 100;
+    font-size: 1.125rem;
 }
 
 .hero button:hover {
     opacity: 0.9;
-}
+} */
 
 /* bottom cards container */
 .cards {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     gap: 1.25rem;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 /* first card */
 .mainCard {
-    display: flex;
-    background: #fff;
-    border-radius: 1rem;
-    overflow: hidden;
     color: #111;
+    background: #FFF5EE;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    padding: 1.5rem;
 }
 
 .mainCardContent {
     padding: 1.5rem;
     flex: 1;
+    padding-left: 0;
 }
 
 .mainCardContent h4 {
-    font-size: 0.9rem;
+    font-size: 1.75rem;
+    color: #2F1908;
     margin-bottom: 0.5rem;
-    font-weight: 700;
+    font-weight: 200;
+    font-family: var(--font-reyork);
 }
 
 .mainCardContent p {
     font-size: 0.75rem;
     line-height: 1.6;
-    color: #444;
+    color: #636969;
+    font-family: var(--font-pilat);
 }
 
 .mainCardMedia {
-    width: 180px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #fff;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+    aspect-ratio: 1 / 1;
     font-size: 2rem;
+    display: flex;
+    border-radius: 1rem;
 }
 
 /* side images */

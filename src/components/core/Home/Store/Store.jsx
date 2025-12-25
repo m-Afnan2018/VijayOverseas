@@ -7,7 +7,7 @@ export default function Store() {
         <section className={style.section}>
             <h5>our menu</h5>
             <h2>
-                Discover a collection of <span>MULTIPLE JAGGERY</span>
+                Discover a collection of <br/><span>MULTIPLE JAGGERY</span>
             </h2>
 
             <button className={style.viewAll}>view all menu</button>

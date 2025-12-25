@@ -43,9 +43,7 @@ export default function OurStory() {
                 <div className={style.storyContent}>
                     <Image src={s2} alt="sugar" />
                     <p>
-                        The company begins its journey with jaggery, India’s classic
-                        sweetener used for centuries in everyday meals, winter recipes and
-                        Ayurvedic home remedies. In loving memory of my father...
+                        The company begins its journey with jaggery, India’s classic sweetener used for centuries in everyday meals, winter recipes and Ayurvedic home remedies. In Loving Memory of My Father, This company is founded in honour of my beloved father, whose values of integrity, hard work and humility guide every step of this journey. His legacy lives on through Vijay Overseas, shaping a culture of trust, purpose and excellence in how we source, produce and deliver every batch of jaggery.
                     </p>
                     <button>read more</button>
                 </div>
@@ -53,7 +51,7 @@ export default function OurStory() {
 
             <div className={style.stats}>
                 {statsData.map((data, index) => (
-                    <div key={index}>
+                    <div key={index} style={{ borderLeft: index === 0 ? 'none' : '1px solid #6541182E' }}>
                         <h1>{data.value}</h1>
                         <h6>{data.name}</h6>
                     </div>
@@ -64,8 +62,7 @@ export default function OurStory() {
                 <div>
                     <h5>Our Vision & Purpose</h5>
                     <p>
-                        Vijay Overseas aims to become one of India’s leading exporters of
-                        pure, organic and Ayurveda-aligned food products...
+                        Vijay Overseas aims to become one of India’s leading exporters of pure, organic and Ayurveda‑aligned food products, starting with premium jaggery. The company is led by founder Somya Sharma, who is deeply committed to sustainable development and pure food production and supply. Inspired by the Indian ideal of Vasudhaiva Kutumbakam – “the world is one family” – we see every shipment of jaggery as nourishment for the global family and support for rural communities at home.
                     </p>
                 </div>
                 <Image src={s3} alt="gudh" />

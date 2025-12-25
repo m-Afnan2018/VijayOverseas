@@ -28,7 +28,7 @@ const reyork = localFont({
             style: "normal",
         },
     ],
-    variable: "--font-myfont",
+    variable: "--font-reyork",
 });
 
 export const metadata = {
