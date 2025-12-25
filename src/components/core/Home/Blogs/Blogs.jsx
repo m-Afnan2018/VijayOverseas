@@ -24,20 +24,33 @@ const blogs = [
 ]
 
 export default function Blogs() {
-    return <section>
-        <h5>blog post</h5>
-        <h2>Latest posts and insights</h2>
-        <div>
-            {blogs.map((blog, index) => {
-                return <div key={index}>
-                    <Image src={blog.image} alt={blog.title} />
-                    <div>
-                        <Image src={folder} alt={folder} />
-                        <h3>{blog.type}</h3>
-                    </div>
-                    <h4>{blog.title}</h4>
-                </div>
-            })}
-        </div>
-    </section>
+    return (
+        <section className={style.section}>
+            <h5>blog post</h5>
+            <h2>
+                Latest posts and <span>insights</span>
+            </h2>
+
+            <div className={style.grid}>
+                {blogs.map((blog, index) => {
+                    return (
+                        <div className={style.card} key={index}>
+                            <div className={style.imageWrap}>
+                                <Image src={blog.image} alt={blog.title} />
+                            </div>
+
+                            <div className={style.content}>
+                                <div className={style.meta}>
+                                    <Image src={folder} alt="folder" />
+                                    <h3>{blog.type}</h3>
+                                </div>
+
+                                <h4>{blog.title}</h4>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
+        </section>
+    );
 }
