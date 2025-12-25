@@ -3,12 +3,15 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import "./Navbar.css";
+import Image from "next/image";
+import logo from '@/assets/images/logos/logo.svg'
 
 const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Menu", href: "/menu" },
-    { name: "Pages", href: "/pages" },
+    { name: "Why Choose Us", href: "/chooseUs" },
+    { name: "Blogs", href: "/blogs" },
+    { name: "FAQ", href: "/faq" },
     { name: "Contact", href: "/contact" },
 ];
 
@@ -20,7 +23,7 @@ export default function Navbar() {
             <div className="navbar-container">
                 {/* Logo */}
                 <div className="logo">
-                    <Link href="/">VB</Link>
+                    <Link href="/"><Image src={logo} alt="logo" /></Link>
                 </div>
 
                 {/* Links */}

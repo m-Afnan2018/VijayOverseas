@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -44,8 +46,50 @@ button {
   border-radius: 0.5rem;
   font-weight: 100;
   font-size: 1.125rem;
+  letter-spacing: 1px;
 }
 
 button:hover {
   opacity: 0.9;
+}
+
+h5 {
+  font-family: var(--font-pilat);
+  font-weight: 450;
+  font-size: 13px;
+  line-height: 20.8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  color: #2F1908;
+}
+
+h2 {
+  font-family: var(--font-reyork);
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: -1.8px;
+  text-transform: uppercase;
+  margin-bottom: 1.8rem;
+  color: #6C3D08;
+}
+
+h2 span {
+  color: #0EACC3;
+}
+
+p {
+  font-family: var(--font-pilat);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: -0.2px;
+  text-align: center;
+  vertical-align: middle;
+  color: #462B0D;
+}
+
+section {
+  width: 100%;
 }

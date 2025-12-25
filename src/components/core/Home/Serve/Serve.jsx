@@ -24,7 +24,7 @@ export default function Serve() {
             <div className={style.left}>
                 <h5>Who We Serve</h5>
                 <h2>
-                    Vijay Overseas is <span>designed for:</span>
+                    Vijay Overseas is <br/><span>designed </span>for:
                 </h2>
 
                 <div className={style.list}>

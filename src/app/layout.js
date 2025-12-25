@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "@/components/common/Navbar/Navbar";
+import Footer from "@/components/common/Footer/Footer";
+import ContactUs from "@/components/common/ContactUs/ContactUs";
 
 const pilatWide = localFont({
     src: [
@@ -40,8 +42,10 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={`${reyork.variable} ${pilatWide.variable}`}>
-                <Navbar/>
+                <Navbar />
                 {children}
+                <ContactUs />
+                <Footer />
             </body>
         </html>
     );

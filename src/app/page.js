@@ -11,8 +11,6 @@ import GetStarted from "@/components/core/Home/GetStarted/GetStarted";
 import Testimonials from "@/components/core/Home/Testimonials/Testimonials";
 import FAQ from "@/components/core/Home/FAQ/FAQ";
 import Blogs from "@/components/core/Home/Blogs/Blogs";
-import ContactUs from "@/components/common/ContactUs/ContactUs";
-import Footer from "@/components/common/Footer/Footer";
 
 export default function Home() {
     return (
@@ -28,8 +26,6 @@ export default function Home() {
             <Testimonials/>
             <FAQ/>
             <Blogs/>
-            <ContactUs/>
-            <Footer/>
         </div>
     );
 }

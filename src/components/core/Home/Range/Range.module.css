@@ -8,19 +8,25 @@
 
 /* main box */
 .box {
-    border: 1.5px solid #d9a06a;
+    border: 1.5px solid #B27647;
     border-radius: 1rem;
     padding: 1.8rem 2rem;
-    background: #fffaf4;
+    background: #FFF5EE;
 }
 
 /* section heading */
 .box h4 {
-    font-size: 0.9rem;
+    font-family: var(--font-pilat);
     font-weight: 700;
-    margin-bottom: 1.4rem;
+    font-style: Bold;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    text-align: center;
+    vertical-align: middle;
     text-transform: uppercase;
-    color: #3b2a1a;
+    margin-bottom: 1.4rem;
+    color: #2F1908;
 }
 
 /* individual item */
@@ -34,20 +40,26 @@
 
 /* item heading */
 .item h5 {
-    font-size: 0.75rem;
-    font-weight: 700;
+    font-family: var(--font-pilat);
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23.4px;
+    letter-spacing: -0.7px;
     text-transform: uppercase;
     margin-bottom: 0.4rem;
     padding-bottom: 0.4rem;
     border-bottom: 1px dashed #d9a06a;
-    color: #3b2a1a;
+    color: #2F1908;
 }
 
 /* description */
 .item p {
-    font-size: 0.72rem;
-    line-height: 1.6;
-    color: #6b5a4a;
+    font-family: var(--font-pilat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: -0.2px;
+    color: #636969;
 }
 
 /* responsive */

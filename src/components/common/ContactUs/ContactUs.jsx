@@ -9,9 +9,9 @@ export default function ContactUs() {
             <div className={style.wrapper}>
                 {/* LEFT */}
                 <div className={style.left}>
-                    <h1>
+                    <h2>
                         Get In <span>Touch !</span>
-                    </h1>
+                    </h2>
 
                     <p>
                         Choose the unique Xlivery platform and head into the world of

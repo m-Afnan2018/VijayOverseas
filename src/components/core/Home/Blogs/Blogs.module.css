@@ -5,26 +5,6 @@
     color: #3b2a1a;
 }
 
-/* small label */
-.section h5 {
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    color: #7a5a3a;
-}
-
-/* main heading */
-.section h2 {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 3rem;
-}
-
-.section h2 span {
-    color: #00b8c8;
-}
-
 /* grid */
 .grid {
     max-width: 1150px;
@@ -74,17 +54,25 @@
 }
 
 .meta h3 {
-    font-size: 0.65rem;
+    font-family: var(--font-pilat);
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20.8px;
+    letter-spacing: 3px;
+    vertical-align: middle;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #7a5a3a;
+    color: #2F1908;
 }
 
 /* title */
 .content h4 {
-    font-size: 0.95rem;
-    font-weight: 700;
-    line-height: 1.35;
+    font-family: var(--font-pilat);
+    font-weight: 450;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    vertical-align: middle;
+    text-transform: uppercase;
 }
 
 /* hover (optional but matches premium feel) */

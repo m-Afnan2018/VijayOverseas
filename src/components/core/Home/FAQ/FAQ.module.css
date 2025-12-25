@@ -1,28 +1,12 @@
 .section {
-    background: #fff8f1;
+    background: #FFF5EE;
     padding: 5rem 4rem;
     text-align: center;
     color: #3b2a1a;
+    width: 100%;
 }
 
 /* headings */
-.section h5 {
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    color: #7a5a3a;
-}
-
-.section h2 {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 3rem;
-}
-
-.section h2 span {
-    color: #00b8c8;
-}
 
 /* list */
 .faqList {
@@ -43,6 +27,13 @@
 
 /* question button */
 .question {
+    font-family: var(--font-pilat);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    vertical-align: middle;
+    margin: 0;
     width: 100%;
     background: none;
     border: none;
@@ -54,7 +45,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #3b2a1a;
+    color: #2F1908;
 }
 
 /* icon */

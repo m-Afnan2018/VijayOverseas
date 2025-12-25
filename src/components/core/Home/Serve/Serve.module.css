@@ -10,22 +10,29 @@
 
 /* LEFT CONTENT */
 .left h5 {
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
+    font-family: var(--font-pilat);
+    font-weight: 450;
+    font-size: 13px;
+    line-height: 20.8px;
+    letter-spacing: 3px;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
-    color: #7a5a3a;
+    color: #2F1908;
 }
 
 .left h2 {
-    font-size: 2rem;
-    font-weight: 800;
-    line-height: 1.25;
+    font-family: var(--font-reyork);
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -1.8px;
+    text-transform: uppercase;
     margin-bottom: 1.8rem;
+    color: #6C3D08;
 }
 
 .left h2 span {
-    color: #00b8c8;
+    color: #0EACC3;
 }
 
 /* checklist */
@@ -42,15 +49,19 @@
 }
 
 .item img {
-    width: 18px;
-    height: 18px;
+    width: 30px;
+    height: 30px;
     margin-top: 2px;
 }
 
 .item p {
-    font-size: 0.75rem;
-    line-height: 1.6;
-    color: #5a4a3a;
+    font-family: var(--font-pilat);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #462B0D;
 }
 
 /* RIGHT IMAGE */

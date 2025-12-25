@@ -3,21 +3,17 @@
     padding: 5rem 4rem;
     text-align: center;
     color: #3b2a1a;
+    width: 100%;
 }
 
 /* small label */
 .section h5 {
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    color: #7a5a3a;
+    text-align: left;
 }
 
 /* main heading */
 .section h2 {
-    font-size: 2rem;
-    font-weight: 800;
+    text-align: left;
     margin-bottom: 3rem;
 }
 
@@ -51,21 +47,20 @@
 }
 
 .quote img {
-    width: 28px;
+    width: 40px;
     height: auto;
     margin-bottom: 0.8rem;
 }
 
-.quote p {
-    font-size: 0.75rem;
-    line-height: 1.7;
-    color: #5a4a3a;
-}
 
 /* author */
 .author {
-    font-size: 0.8rem;
+    font-family: var(--font-pilat);
     font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.2px;
+    text-align: center;
     margin-top: 1.5rem;
     color: #000;
 }

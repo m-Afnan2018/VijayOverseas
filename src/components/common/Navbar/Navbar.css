@@ -29,10 +29,15 @@
 }
 
 .nav-link {
-    color: #ffffffcc;
+    font-family: var(--font-pilat);
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 25.6px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFF9F5;
     text-decoration: none;
     font-size: 0.9rem;
-    letter-spacing: 0.05em;
     position: relative;
 }
 
@@ -57,7 +62,9 @@
 
 /* CTA */
 .cta-btn {
-    background: #00c2d1;
+    font-family: var(--font-pilat);
+    text-transform: uppercase;
+    background: #0EACC3;
     color: #fff;
     padding: 0.6rem 1.2rem;
     border-radius: 999px;
