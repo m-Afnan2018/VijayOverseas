@@ -22,6 +22,10 @@
     text-decoration: none;
 }
 
+.logo img{
+    width: 250px;
+}
+
 /* Nav links */
 .nav-links {
     display: flex;
@@ -31,13 +35,12 @@
 .nav-link {
     font-family: var(--font-pilat);
     font-weight: 600;
-    font-size: 13px;
+    font-size: 0.75rem;
     line-height: 25.6px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #FFF9F5;
     text-decoration: none;
-    font-size: 0.9rem;
     position: relative;
 }
 

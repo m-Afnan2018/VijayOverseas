@@ -9,8 +9,8 @@ export default function Header() {
             className={style.header}
             style={{ backgroundImage: `url(${heroMain.src})` }}
         >
-            <h2>Home <span><Image src={arrow} alt='arrow'/></span> Contact</h2>
-            <h3>Contact Us</h3>
+            <h2>Home <span><Image src={arrow} alt='arrow'/></span> FAQS</h2>
+            <h3>FAQS</h3>
         </section>
     );
 }

@@ -1,8 +1,11 @@
 import Header from "@/components/core/Blogs/Header/Header";
+import Blogs from  "@/components/core/Blogs/Blogs/Blogs";
 
-
-export default function Blogs(){
+export default function Blog() {
     return (
-        <Header/>
+        <section>
+            <Header />
+            <Blogs/>
+        </section>
     )
 }

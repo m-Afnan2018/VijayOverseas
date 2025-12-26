@@ -23,7 +23,7 @@
 }
 
 /* headings */
-.header h2 {
+.header h3 {
     font-family: var(--font-pilat);
     font-weight: 600;
     font-style: 'Demi';
@@ -37,14 +37,12 @@
     margin-bottom: 0.75rem;
 }
 
-.header h3 {
-    font-family: var(--font-reyork);
-    font-weight: 400;
-    text-transform: uppercase;
+.header h5{
+    margin-top: 5rem;
+    color: white;
     text-align: center;
-    font-size: 4.2rem;
-    font-weight: 800;
-    max-width: 700px;
-    margin: 0 auto 1rem;
-    line-height: 1.2;
+}
+.header h2{
+    color: white;
+    text-align: center;
 }

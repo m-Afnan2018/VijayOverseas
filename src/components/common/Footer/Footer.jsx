@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
 import style from "./Footer.module.css";
 
 import logo from "@/assets/images/logos/logo.svg";
@@ -16,19 +19,29 @@ export default function Footer() {
             <div className={style.top}>
                 {/* COLUMN 1 */}
                 <div className={style.col}>
-                    <Image src={logo} alt="Vijay Overseas" className={style.logo} />
+                    <Link href="/">
+                        <Image src={logo} alt="Vijay Overseas" className={style.logo} />
+                    </Link>
                     <p>
-                        Vijay Overseas brings India’s most loved natural sweetness, jaggery
-                        (gur), to homes, athletes and businesses in India and across the
-                        world.
+                        {" Vijay Overseas brings India's most loved natural sweetness, jaggery (gur), to homes, athletes and businesses in India and across the world."}
                     </p>
 
                     <div className={style.socials}>
-                        <Image src={facebook} alt="facebook" />
-                        <Image src={twitter} alt="twitter" />
-                        <Image src={instagram} alt="instagram" />
-                        <Image src={linkedin} alt="linkedin" />
-                        <Image src={youtube} alt="youtube" />
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <Image src={facebook} alt="facebook" />
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            <Image src={twitter} alt="twitter" />
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <Image src={instagram} alt="instagram" />
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <Image src={linkedin} alt="linkedin" />
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                            <Image src={youtube} alt="youtube" />
+                        </a>
                     </div>
                 </div>
 
@@ -36,9 +49,9 @@ export default function Footer() {
                 <div className={style.col}>
                     <h4>Get Started</h4>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Products</li>
+                        <li><Link href="/">Home</Link></li>
+                        <li><Link href="/about">About</Link></li>
+                        <li><Link href="/product">Products</Link></li>
                     </ul>
                 </div>
 
@@ -46,10 +59,10 @@ export default function Footer() {
                 <div className={style.col}>
                     <h4>Resources</h4>
                     <ul>
-                        <li>Why choose</li>
-                        <li>Blogs</li>
-                        <li>FAQs</li>
-                        <li>Contact us</li>
+                        <li><Link href="/chooseUs">Why choose</Link></li>
+                        <li><Link href="/blogs">Blogs</Link></li>
+                        <li><Link href="/faq">FAQs</Link></li>
+                        <li><Link href="/contact">Contact us</Link></li>
                     </ul>
                 </div>
 
@@ -57,12 +70,16 @@ export default function Footer() {
                 <div className={style.col}>
                     <h4>Contact Us</h4>
                     <div className={style.contact}>
-                        <span>
-                            <Image src={phone} alt="phone" /> +91-9217848056
-                        </span>
-                        <span>
-                            <Image src={mail} alt="mail" /> info@vijayoverseas.com
-                        </span>
+                        <a href="tel:+919217848056">
+                            <span>
+                                <Image src={phone} alt="phone" /> +91-9217848056
+                            </span>
+                        </a>
+                        <a href="mailto:info@vijayoverseas.com">
+                            <span>
+                                <Image src={mail} alt="mail" /> info@vijayoverseas.com
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
