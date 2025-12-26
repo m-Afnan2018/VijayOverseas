@@ -55,6 +55,7 @@
 }
 
 .item p {
+    text-align: left;
     font-family: var(--font-pilat);
     font-weight: 400;
     font-size: 16px;

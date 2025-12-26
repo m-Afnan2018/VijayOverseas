@@ -10,32 +10,32 @@ import Image from 'next/image'
 
 const blogs = [
     {
-        type: "Recipes",
+        type: "Jaggery",
         image: image1,
         title: "Why Jaggery Is Healthier Than Refined Sugar",
     },
     {
-        type: "Recipes",
+        type: "Jaggery",
         image: image2,
         title: "Health Benefits of Jaggery You Should Know",
     },
     {
-        type: "Bread",
+        type: "Jaggery",
         image: image3,
         title: "How Traditional Jaggery Is Made Naturally",
     },
     {
-        type: "Bread",
+        type: "Jaggery",
         image: image4,
         title: "Jaggery in Ayurveda: A Natural Source of Energy",
     },
     {
-        type: "Pastries",
+        type: "Jaggery",
         image: image5,
         title: "Why Global Markets Are Choosing Indian Jaggery",
     },
     {
-        type: "Pastries",
+        type: "Jaggery",
         image: image6,
         title: "Sustainable Farming Behind Every Block of Jaggery",
     },

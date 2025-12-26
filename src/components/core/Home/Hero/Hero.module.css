@@ -165,4 +165,12 @@
     .hero h3 {
         font-size: 2rem;
     }
+
+    .mainCard {
+        flex-direction: column-reverse;
+    }
+
+    .mainCardMedia {
+        width: 100%;
+    }
 }

@@ -21,7 +21,8 @@
 }
 
 .contactItem {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: var(--font-pilat);
     font-weight: 500;
     font-size: 1rem;
     line-height: 180%;
@@ -94,5 +95,9 @@
 
     .row {
         grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 4rem 1rem;
     }
 }

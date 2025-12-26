@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 import "./Navbar.css";
 import Image from "next/image";
 import logo from '@/assets/images/logos/logo.svg'
@@ -18,6 +19,15 @@ const navLinks = [
 
 export default function Navbar() {
     const pathname = usePathname();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
 
     return (
         <header className="navbar">
@@ -27,25 +37,42 @@ export default function Navbar() {
                     <Link href="/"><Image src={logo} alt="logo" /></Link>
                 </div>
 
+                {/* Hamburger Icon */}
+                <button
+                    className={`hamburger ${isMenuOpen ? 'active' : ''}`}
+                    onClick={toggleMenu}
+                    aria-label="Toggle menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
                 {/* Links */}
-                <nav className="nav-links">
+                <nav className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
                     {navLinks.map((link) => (
                         <Link
                             key={link.href}
                             href={link.href}
                             className={
-                                pathname === link.href
+                                pathname === `${link.href}/` || pathname === `${link.href}`
                                     ? "nav-link active"
                                     : "nav-link"
                             }
+                            onClick={closeMenu}
                         >
                             {link.name}
                         </Link>
                     ))}
+
+                    {/* CTA Button for Mobile */}
+                    <Link href="/contact" className="cta-btn mobile-cta" onClick={closeMenu}>
+                        Get Started
+                    </Link>
                 </nav>
 
-                {/* CTA Button */}
-                <Link href="/get-started" className="cta-btn">
+                {/* CTA Button for Desktop */}
+                <Link href="/contact" className="cta-btn desktop-cta">
                     Get Started
                 </Link>
             </div>

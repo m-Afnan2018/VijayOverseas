@@ -93,3 +93,16 @@ p {
 section {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  h2 {
+    font-family: var(--font-reyork);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+    color: #6C3D08;
+  }
+}

@@ -14,18 +14,17 @@ export default function ContactUs() {
                     </h2>
 
                     <p>
-                        Choose the unique Xlivery platform and head into the world of
-                        e-commerce with confidence and ease. It&apos;s simple.
+                        Experience the purity of nature with Vijay Overseas. Whether you&apos;re looking for premium jaggery for your home, bulk orders for your business, or export inquiries—we&apos;re here to help. Reach out today!
                     </p>
 
                     <div className={style.contactItem}>
                         <Image src={callIcon} alt="call-icon" />
-                        <span>+91 98930 54546</span>
+                        <span>+91 +91 9217848056</span>
                     </div>
 
                     <div className={style.contactItem}>
                         <Image src={messageIcon} alt="message-icon" />
-                        <span>contact@xlivery.com</span>
+                        <span>info@vijayoverseas.com</span>
                     </div>
                 </div>
 

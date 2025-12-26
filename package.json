@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "optimize:images": "node scripts/optimize-images.js",
+    "prebuild": "npm run optimize:images"
   },
   "dependencies": {
     "next": "16.1.1",
@@ -16,6 +18,12 @@
   "devDependencies": {
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
-    "eslint-config-next": "16.1.1"
+    "eslint-config-next": "16.1.1",
+    "imagemin": "^9.0.1",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-svgo": "^11.0.1",
+    "sharp": "^0.34.5"
   }
 }

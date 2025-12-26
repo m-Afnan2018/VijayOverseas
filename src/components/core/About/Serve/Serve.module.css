@@ -87,6 +87,10 @@
         padding: 3rem 1.5rem;
     }
 
+    .section>div{
+        grid-template-columns: 1fr;
+    }
+
     .imageWrap {
         order: -1;
     }

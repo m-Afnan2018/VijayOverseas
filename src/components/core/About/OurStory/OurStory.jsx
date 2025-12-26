@@ -10,19 +10,35 @@ const s3 = story3;
 
 const statsData = [
     {
-        name: 'Pastries Served',
-        value: '12K+'
+        name: 'Pure & Natural ',
+        value: '100%'
     }, {
-        name: 'Happy Customers',
-        value: '3.5K+'
+        name: 'Satisfied Customers ',
+        value: '500+'
     }, {
-        name: 'Signature Recipes',
-        value: '25+'
+        name: 'Premium Variants',
+        value: '6+'
     }, {
-        name: 'Years of Craft',
-        value: '8+'
+        name: 'ARTIFICIAL ADDITIVES',
+        value: '0'
     }
 ]
+
+// const statsData = [
+//     {
+//         name: 'Pastries Served',
+//         value: '12K+'
+//     }, {
+//         name: 'Happy Customers',
+//         value: '3.5K+'
+//     }, {
+//         name: 'Signature Recipes',
+//         value: '25+'
+//     }, {
+//         name: 'Years of Craft',
+//         value: '8+'
+//     }
+// ]
 
 export default function OurStory() {
     return (

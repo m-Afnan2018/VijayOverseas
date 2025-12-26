@@ -36,6 +36,8 @@
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: 2.5rem;
+    max-width: 1200px;
+    margin: auto;
     margin-bottom: 3rem;
 }
 
@@ -58,6 +60,7 @@
 }
 
 .founder h3 {
+    width: max-content;
     margin-top: .75rem;
     position: absolute;
     bottom: 0;
@@ -181,6 +184,12 @@
         padding: 3rem 1.5rem;
     }
 
+    .section h2 {
+        letter-spacing: 0.2px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
     .storyGrid,
     .vision {
         grid-template-columns: 1fr;
@@ -189,5 +198,14 @@
     .stats {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
+    }
+
+
+    .stats h1 {
+        font-size: 48px;
+    }
+
+    .stats h6 {
+        font-size: 16px;
     }
 }

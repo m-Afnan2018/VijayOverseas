@@ -22,7 +22,7 @@
     text-decoration: none;
 }
 
-.logo img{
+.logo img {
     width: 250px;
 }
 
@@ -30,6 +30,7 @@
 .nav-links {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 .nav-link {
@@ -74,8 +75,142 @@
     font-size: 0.85rem;
     text-decoration: none;
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .cta-btn:hover {
     opacity: 0.9;
+}
+
+/* Hide mobile CTA by default */
+.mobile-cta {
+    display: none;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 101;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #FFF9F5;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .navbar-container {
+        padding: 1rem 1.5rem;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+    }
+
+    .nav-link {
+        font-size: 0.7rem;
+    }
+
+    .cta-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        margin: auto;
+        margin-right: 0;
+    }
+
+    .desktop-cta {
+        display: none;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 70%;
+        max-width: 300px;
+        background: rgba(0, 0, 0, 0.95);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 5rem 2rem 2rem;
+        gap: 2rem;
+        transition: right 0.3s ease;
+        align-items: flex-start;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .nav-link.active::after {
+        width: 50px;
+    }
+
+    .mobile-cta {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0.75rem 1rem;
+    }
+
+    .logo img {
+        width: 250px;
+    }
+
+    .nav-links {
+        width: 80%;
+    }
+
+    .hamburger span {
+        width: 22px;
+    }
 }

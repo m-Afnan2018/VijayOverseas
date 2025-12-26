@@ -16,7 +16,7 @@ export default function GetStarted() {
             <div className={style.overlay}>
                 <h5>get started</h5>
                 <h2>
-                    start your day<br />with Vijay Oversea
+                    start your day<br />with Vijay Overseas
                 </h2>
             </div>
         </section>

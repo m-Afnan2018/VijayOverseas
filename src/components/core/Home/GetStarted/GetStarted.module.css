@@ -52,14 +52,14 @@
 /* main heading */
 .overlay h2 {
     font-family: var(--font-reyork);
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 69%;
-    letter-spacing: -2px;
+    letter-spacing: 0px;
     vertical-align: middle;
     text-transform: uppercase;
+    color: #fff9f5;
     max-width: 420px;
-    color: #FFF9F5;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 80%;
 }
 
 /* responsive */
