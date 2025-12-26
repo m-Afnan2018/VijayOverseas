@@ -9,6 +9,7 @@ import logo from '@/assets/images/logos/logo.svg'
 const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
+    { name: "Product", href: "/product" },
     { name: "Why Choose Us", href: "/chooseUs" },
     { name: "Blogs", href: "/blogs" },
     { name: "FAQ", href: "/faq" },

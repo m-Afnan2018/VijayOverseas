@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import style from './Header.module.css'
-import heroMain from '@/assets/images/contact/hero.jpg'
+import heroMain from '@/assets/images/blogs/hero.jpg'
 import arrow from '@/assets/images/common/arrow.svg';
 
 export default function Header() {
@@ -9,8 +9,8 @@ export default function Header() {
             className={style.header}
             style={{ backgroundImage: `url(${heroMain.src})` }}
         >
-            <h2>Home <span><Image src={arrow} alt='arrow'/></span> Contact</h2>
-            <h3>Contact Us</h3>
+            <h2>Home <span><Image src={arrow} alt='arrow'/></span> Blogs</h2>
+            <h3>Blogs</h3>
         </section>
     );
 }
