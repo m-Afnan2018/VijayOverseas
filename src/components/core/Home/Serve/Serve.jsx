@@ -5,16 +5,20 @@ import style from "./Serve.module.css";
 
 const infoData = [
     {
-        description: "Health‑conscious families seeking a better alternative to refined sugar."
+        heading: "Health-Conscious Families: ",
+        description: "Families looking for a clean, natural alternative to refined sugar for daily cooking, beverages, and traditional recipes."
     },
     {
-        description: "Fitness enthusiasts and athletes wanting natural, fast‑acting energy."
+        heading: "Fitness Enthusiasts & Athletes: ",
+        description: "Individuals who prefer natural, fast-acting energy to support workouts, training, and active lifestyles."
     },
     {
-        description: "Organic and natural food lovers who value clean‑label ingredients"
+        heading: "Organic & Natural Food Lovers: ",
+        description: "Consumers who value clean-label ingredients, minimal processing, and honest sourcing."
     },
     {
-        description: "Bulk and export buyers looking for a dependable Indian partner for jaggery bricks, cubes and fusion variants."
+        heading: "Bulk & Export Buyers: ",
+        description: "Retailers, wholesalers, and international buyers seeking a dependable Indian partner for consistent jaggery supply."
     },
 ]
 
@@ -24,7 +28,7 @@ export default function Serve() {
             <div className={style.left}>
                 <h5>Who We Serve</h5>
                 <h2>
-                    Vijay Overseas is <br/><span>designed </span>for:
+                    Vijay Overseas is <br /><span>designed </span>for:
                 </h2>
 
                 <div className={style.list}>
@@ -32,7 +36,7 @@ export default function Serve() {
                         return (
                             <div className={style.item} key={index}>
                                 <Image src={tick} alt="tick" />
-                                <p>{data.description}</p>
+                                <p><span>{data.heading}</span>{data.description}</p>
                             </div>
                         );
                     })}

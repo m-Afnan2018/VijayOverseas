@@ -7,19 +7,19 @@ import Image from 'next/image'
 
 const blogs = [
     {
-        type: "Jaggery",
+        type: "Recipes",
         image: image1,
-        title: "Why Jaggery Is Healthier Than Refined Sugar",
+        title: "Why Businesses Trust Vijay Overseas for Premium Jaggery",
     },
     {
-        type: "Jaggery",
+        type: "Recipes",
         image: image2,
-        title: "Health Benefits of Jaggery You Should Know",
+        title: "Our Commitment to Purity, Sustainability & Farmers",
     },
     {
-        type: "Jaggery",
+        type: "Bread",
         image: image3,
-        title: "How Traditional Jaggery Is Made Naturally",
+        title: "From Indian Fields to Global Markets: The Vijay Overseas Journey",
     },
 ]
 

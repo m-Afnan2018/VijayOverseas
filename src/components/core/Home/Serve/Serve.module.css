@@ -65,6 +65,10 @@
     color: #462B0D;
 }
 
+.item p span {
+    font-weight: 700;
+}
+
 /* RIGHT IMAGE */
 .imageWrap {
     border-radius: 1rem;

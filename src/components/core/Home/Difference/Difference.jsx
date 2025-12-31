@@ -5,19 +5,19 @@ import style from './Difference.module.css'
 const infoData = [
     {
         heading: "Pure & Chemical‑Free ",
-        description: "No sulphur, no preservatives, no artificial colours or flavours – just authentic jaggery in consistent shapes and sizes.",
+        description: "We deliver clean, authentic jaggery with no sulphur, preservatives, or artificial additives. Every batch reflects our commitment to honesty, purity, and consistent quality.",
     },
     {
         heading: "Sustainability‑Focused Sourcing –  ",
-        description: "We work with modern, efficient plants that reduce smoke, fuel use and water wastage compared with traditional open‑furnace jaggery units.",
+        description: "We work with efficient production partners that reduce smoke, fuel use, and water wastage. Our sourcing practices support environmental responsibility and long-term sustainability.",
     },
     {
         heading: "Export‑Ready Quality ",
-        description: "Hygienic handling, reliable specifications and professional packaging for both domestic buyers and international importers.",
+        description: "Hygienic handling, reliable specifications, and professional packaging make our products suitable for both domestic and international markets with confidence.",
     },
     {
         heading: "Farmer & Community Centric ",
-        description: " Every order helps strengthen rural livelihoods and encourages more sustainable agriculture in India. ",
+        description: "Each order supports rural livelihoods and encourages sustainable agriculture. We grow by empowering farmers and strengthening local communities.",
     },
 ]
 

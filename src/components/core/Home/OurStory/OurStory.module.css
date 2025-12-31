@@ -19,25 +19,14 @@
 }
 
 .section h5 {
-    text-transform: uppercase;
-    margin-bottom: .75rem;
-    font-family: var(--font-pilat);
-    font-size: 0.75rem;
-    line-height: 20.8px;
-    letter-spacing: 3px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .section h2 {
-    max-width: 900px;
+    max-width: 1200px;
+    margin: auto;
     margin-bottom: 3rem;
-    font-family: Reyork;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 55px;
-    letter-spacing: -1.8px;
-    vertical-align: middle;
-    text-transform: uppercase;
-    color: #6C3D08;
 }
 
 .section h2 span {
@@ -126,6 +115,7 @@
     align-items: center;
     max-width: 700px;
     margin: auto;
+    margin-top: 100px
 }
 
 .philosophy>h2 {

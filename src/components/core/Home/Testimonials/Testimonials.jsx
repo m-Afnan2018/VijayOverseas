@@ -5,15 +5,15 @@ import quoteIcon from '@/assets/images/home/quote.svg'
 
 const reviews = [
     {
-        review: "I’ve tried many jaggery brands, but this one truly stands out. The taste is rich, natural, and reminds me of traditional homemade gud. Highly recommended!",
+        review: "Vijay Overseas stands out for its consistency and professionalism. The quality is excellent, and their communication and packaging make them a reliable supplier.",
         author: "Rahul"
     },
     {
-        review: "I switched from refined sugar to this jaggery and I can already feel the difference. Digestion is better and the quality is excellent. Will definitely reorder.",
+        review: "We were looking for a dependable Indian brand for natural jaggery, and Vijay Overseas delivered exactly what they promised. Clean quality and timely delivery. ",
         author: "Sunita"
     },
     {
-        review: "I’ve tried many jaggery brands, but this one truly stands out. The taste is rich, natural, and reminds me of traditional homemade gud. Highly recommended!",
+        review: "From enquiry to delivery, Vijay Overseas handled everything smoothly. A trustworthy company with strong values and export-ready standards",
         author: "Rahul"
     },
 ]

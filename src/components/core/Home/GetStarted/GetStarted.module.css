@@ -56,10 +56,33 @@
     vertical-align: middle;
     text-transform: uppercase;
     color: #fff9f5;
-    max-width: 420px;
+    max-width: 720px;
     font-size: 48px;
     font-weight: 400;
     line-height: 80%;
+}
+
+.overlay p {
+    color: white;
+    max-width: 420px;
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.buttons>button {
+    margin: 0 0 2rem;
+}
+
+.buttons>button:nth-child(2) {
+    background: transparent;
+    border: 2px solid #00b8c8;
 }
 
 /* responsive */
