@@ -11,21 +11,22 @@ import GetStarted from "@/components/core/Home/GetStarted/GetStarted";
 import Testimonials from "@/components/core/Home/Testimonials/Testimonials";
 import FAQ from "@/components/core/Home/FAQ/FAQ";
 import Blogs from "@/components/core/Home/Blogs/Blogs";
+import Vision from "@/components/core/Home/Vision/Vision";
 
 export default function Home() {
     return (
         <div className={styles.page}>
             <Hero />
-            <OurStory/>
-            <Jaggery/>
-            <Store/>
-            <Range/>
-            <Difference/>
-            <Serve/>
-            <GetStarted/>
-            <Testimonials/>
-            <FAQ/>
-            <Blogs/>
+            <Vision />
+            <OurStory />
+            <Store />
+            <Jaggery />
+            <Difference />
+            <Serve />
+            <GetStarted />
+            <Testimonials />
+            <FAQ />
+            <Blogs />
         </div>
     );
 }

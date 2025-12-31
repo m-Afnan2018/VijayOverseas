@@ -5,14 +5,24 @@ import Image from 'next/image'
 export default function Store() {
     return (
         <section className={style.section}>
-            <h5>our menu</h5>
+            <h5>Our Products</h5>
             <h2>
-                Discover a collection of <br/><span>MULTIPLE JAGGERY</span>
+                EXPLORE OUR  <br /><span>PRODUCT RANGE</span>
             </h2>
 
-            <button className={style.viewAll}>view all menu</button>
+            <p>Starting with premium jaggery, we&apos;re building a diverse portfolio of pure, natural food products from India. Click on any category to explore more</p>
 
-            <div className={style.grid}>
+            <div className={style.card}>
+                <Image src={storeData[0].image} alt={storeData[0].heading} />
+                <h3> jaggery</h3>
+                <p className={style.description}>Pure, chemical-free jaggery in multiple formats—bricks, cubes, and fusion variants. Our flagship product bringing traditional sweetness to modern homes.</p>
+
+                <div className={style.cardFooter}>
+                    <button className={style.orderBtn}>Explore Jaggery</button>
+                </div>
+            </div>
+
+            {/* <div className={style.grid}>
                 {storeData.map((data, index) => {
                     return (
                         <div className={style.card} key={index}>
@@ -27,7 +37,7 @@ export default function Store() {
                         </div>
                     );
                 })}
-            </div>
+            </div> */}
         </section>
     );
 }

@@ -29,9 +29,7 @@ export default function OurStory() {
         <section className={style.section}>
             <h5>our story</h5>
             <h2>
-                Vijay Overseas was founded in <span>November 2025</span> with a simple
-                vision: the world deserves honest, natural sweetness instead of
-                over-refined sugar.
+                FOUNDED IN LOVING <span>MEMORY</span>, DRIVEN BY PURPOSE
             </h2>
 
             <div className={style.storyGrid}>
@@ -41,12 +39,23 @@ export default function OurStory() {
                 </div>
 
                 <div className={style.storyContent}>
-                    <Image src={s2} alt="sugar" />
-                    <p>
-                        The company begins its journey with jaggery, India’s classic sweetener used for centuries in everyday meals, winter recipes and Ayurvedic home remedies. In Loving Memory of My Father, This company is founded in honour of my beloved father, whose values of integrity, hard work and humility guide every step of this journey. His legacy lives on through Vijay Overseas, shaping a culture of trust, purpose and excellence in how we source, produce and deliver every batch of jaggery.
+                    <p>Vijay Overseas was founded in December 2025 with a simple yet powerful vision: the world deserves honest, natural sweetness instead of over-refined sugar.</p>
+
+                    <h4>In Loving Memory of My Father</h4>
+                    <p>his company is founded in honour of my beloved father, whose values of integrity, hard work and humility guide every step of this journey. His legacy lives on through Vijay Overseas, shaping a culture of trust, purpose and excellence in how we source, produce and deliver every batch.</p>
+                    <h4>Founded by Somya Sharma</h4>
+                    <p>Led by founder Somya Sharma, who is deeply committed to sustainable development and pure food production. Every decision we make is rooted in creating long-term value for farmers, communities, and customers worldwide.
                     </p>
-                    <button>read more</button>
+                    <button>Explore Product</button>
                 </div>
+            </div>
+
+            <div className={style.philosophy}>
+                <h5>Our Philosophy</h5>
+                <h2>VASUDHAIVA KUTUMBAKAM</h2>
+                <h6>“The World is One Family”</h6>
+                <p>Inspired by this ancient Indian ideal, we believe that nourishing people everywhere with clean, ethical food from India is both a business and a responsibility. Every product we ship serves not just customers, but farmers, communities, and the environment.
+                    We are building a bridge between India&apos;s agricultural heritage and the world&apos;s dinner tables—with purity, sustainability, and respect at every step. </p>
             </div>
 
             <div className={style.stats}>
@@ -56,16 +65,6 @@ export default function OurStory() {
                         <h6>{data.name}</h6>
                     </div>
                 ))}
-            </div>
-
-            <div className={style.vision}>
-                <div>
-                    <h5>Our Vision & Purpose</h5>
-                    <p>
-                        Vijay Overseas aims to become one of India’s leading exporters of pure, organic and Ayurveda‑aligned food products, starting with premium jaggery. The company is led by founder Somya Sharma, who is deeply committed to sustainable development and pure food production and supply. Inspired by the Indian ideal of Vasudhaiva Kutumbakam – “the world is one family” – we see every shipment of jaggery as nourishment for the global family and support for rural communities at home.
-                    </p>
-                </div>
-                <Image src={s3} alt="gudh" />
             </div>
         </section>
     );

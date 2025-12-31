@@ -1,6 +1,6 @@
 import style from './Hero.module.css'
 
-import heroMain from '@/assets/images/home/hero-main.jpg'
+import heroMain from '@/assets/images/home/hero-main.png'
 import hero1 from '@/assets/images/home/hero1.png'
 import hero2 from '@/assets/images/home/hero2.jpg'
 import hero3 from '@/assets/images/home/hero3.png'
@@ -10,15 +10,17 @@ export default function Hero() {
     return (
         <section
             className={style.hero}
-            style={{ backgroundImage: `url(${heroMain.src})` }}
+            style={{ background: `radial-gradient(#81400e8a, #2f19085c), url(${heroMain.src})`, backgroundSize: 'cover' }}
         >
             <h2>welcome to Vijay Overseas</h2>
-            <h3>Natural Jaggery from India – Vijay Overseas</h3>
+            <h3>PURE, ORGANIC & SUSTAINABLE FOODPRODUCTS FROM INDIA</h3>
             <h5>
-                Vijay Overseas brings India’s most loved natural sweetness, jaggery (gur),
-                to homes, athletes and businesses in India and across the world.
+                Bringing India&apos;s finest natural food products to the world. Starting with premium jaggery, we&apos;re committed to purity, sustainability, and traditional wisdom.
             </h5>
-            <button>learn more</button>
+            <div className={style.buttons}>
+                <button>Our Story</button>
+                <button>Explore Product</button>
+            </div>
 
             <div className={style.cards}>
                 <div className={style.mainCard}>
