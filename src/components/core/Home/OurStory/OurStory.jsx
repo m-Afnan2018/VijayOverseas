@@ -39,10 +39,10 @@ export default function OurStory() {
                 </div>
 
                 <div className={style.storyContent}>
-                    <p>Vijay Overseas was founded in December 2025 with a simple yet powerful vision: the world deserves honest, natural sweetness instead of over-refined sugar.</p>
+                    {/* <p>Vijay Overseas was founded in November 2025 with a simple yet powerful vision: the world deserves honest, natural sweetness instead of over-refined sugar.</p> */}
 
                     <h4>In Loving Memory of My Father</h4>
-                    <p>his company is founded in honour of my beloved father, whose values of integrity, hard work and humility guide every step of this journey. His legacy lives on through Vijay Overseas, shaping a culture of trust, purpose and excellence in how we source, produce and deliver every batch.</p>
+                    <p>This company is founded in November 2025 in honour of my beloved father, whose values of integrity, hard work and humility guide every step of this journey. His legacy lives on through Vijay Overseas, shaping a culture of trust, purpose and excellence in how we source, produce and deliver every batch.</p>
                     <h4>Founded by Somya Sharma</h4>
                     <p>Led by founder Somya Sharma, who is deeply committed to sustainable development and pure food production. Every decision we make is rooted in creating long-term value for farmers, communities, and customers worldwide.
                     </p>
@@ -54,7 +54,7 @@ export default function OurStory() {
                 <h5>Our Philosophy</h5>
                 <h2>VASUDHAIVA KUTUMBAKAM</h2>
                 <h6>“The World is One Family”</h6>
-                <p>Inspired by this ancient Indian ideal, we believe that nourishing people everywhere with clean, ethical food from India is both a business and a responsibility. Every product we ship serves not just customers, but farmers, communities, and the environment.
+                <p>Inspired by this ancient Indian ideal, we believe that nourishing people everywhere with clean, ethical food from India is both a development and a responsibility. Every product we ship serves not just customers, but farmers, communities, and the environment.
                     We are building a bridge between India&apos;s agricultural heritage and the world&apos;s dinner tables—with purity, sustainability, and respect at every step. </p>
             </div>
 

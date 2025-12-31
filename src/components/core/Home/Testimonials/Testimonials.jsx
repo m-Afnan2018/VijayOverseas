@@ -14,7 +14,7 @@ const reviews = [
     },
     {
         review: "From enquiry to delivery, Vijay Overseas handled everything smoothly. A trustworthy company with strong values and export-ready standards",
-        author: "Rahul"
+        author: "Afnan"
     },
 ]
 

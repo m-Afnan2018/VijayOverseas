@@ -7,17 +7,17 @@ import Image from 'next/image'
 
 const blogs = [
     {
-        type: "Recipes",
+        type: "Jaggery",
         image: image1,
         title: "Why Businesses Trust Vijay Overseas for Premium Jaggery",
     },
     {
-        type: "Recipes",
+        type: "Jaggery",
         image: image2,
         title: "Our Commitment to Purity, Sustainability & Farmers",
     },
     {
-        type: "Bread",
+        type: "Jaggery",
         image: image3,
         title: "From Indian Fields to Global Markets: The Vijay Overseas Journey",
     },

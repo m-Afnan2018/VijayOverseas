@@ -6,14 +6,8 @@
     width: 100%;
 }
 
-/* small label */
-.section h5 {
-    text-align: left;
-}
-
 /* main heading */
 .section h2 {
-    text-align: left;
     margin-bottom: 3rem;
 }
 

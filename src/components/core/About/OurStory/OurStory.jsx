@@ -56,7 +56,7 @@ export default function OurStory() {
                 <div className={style.storyContent}>
                     <Image src={s2} alt="sugar" />
                     <p>
-                        dedicated to taking natural, organic and Ayurveda‑inspired products—starting with jaggery—to customers around the world. Founded in December 2025, the company focuses on clean‑label, minimally processed foods that preserve traditional Indian flavour, nutrition and wisdom.
+                        dedicated to taking natural, organic and Ayurveda‑inspired products—starting with jaggery—to customers around the world. Founded in November 2025, the company focuses on clean‑label, minimally processed foods that preserve traditional Indian flavour, nutrition and wisdom.
 
                         This journey begins with jaggery (gur), India’s iconic natural sweetener made by slowly concentrating fresh sugarcane juice. Jaggery’s deep caramel sweetness, warm earthy notes and comforting aroma have seasoned Indian homes for generations, in everything from winter sweets and festive desserts to daily chai and homemade remedies. Vijay Overseas turns this age‑old staple into an export‑ready product line that serves modern homes, athletes and global buyers.
                     </p>

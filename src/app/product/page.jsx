@@ -8,7 +8,6 @@ export default function Product() {
     return (
         <section>
             <Header />
-            <InformationBlock />
             <Store />
             <FAQ />
         </section>

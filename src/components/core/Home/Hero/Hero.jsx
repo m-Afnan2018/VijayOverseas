@@ -13,7 +13,7 @@ export default function Hero() {
             style={{ background: `radial-gradient(#81400e8a, #2f19085c), url(${heroMain.src})`, backgroundSize: 'cover' }}
         >
             <h2>welcome to Vijay Overseas</h2>
-            <h3>PURE, ORGANIC & SUSTAINABLE FOODPRODUCTS FROM INDIA</h3>
+            <h3>PURE, ORGANIC & SUSTAINABLE FOOD PRODUCTS FROM INDIA</h3>
             <h5>
                 Bringing India&apos;s finest natural food products to the world. Starting with premium jaggery, we&apos;re committed to purity, sustainability, and traditional wisdom.
             </h5>
