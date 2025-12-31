@@ -4,7 +4,6 @@ import Hero from "@/components/core/Home/Hero/Hero";
 import OurStory from "@/components/core/Home/OurStory/OurStory";
 import Jaggery from "@/components/core/Home/Jaggery/Jaggery";
 import Store from "@/components/core/Home/Store/Store";
-import Range from "@/components/core/Home/Range/Range";
 import Difference from "@/components/core/Home/Difference/Difference";
 import Serve from "@/components/core/Home/Serve/Serve";
 import GetStarted from "@/components/core/Home/GetStarted/GetStarted";
