@@ -17,7 +17,7 @@ const navLinks = [
     { name: "Contact", href: "/contact" },
 ];
 
-export default function Navbar({ shouldShow }) {
+export default function Navbar() {
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -30,7 +30,7 @@ export default function Navbar({ shouldShow }) {
     };
 
     return (
-        <header className="navbar" style={{ top: shouldShow ? '50px' : '0px' }}>
+        <header className="navbar">
             <div className="navbar-container">
                 {/* Logo */}
                 <div className="logo">
