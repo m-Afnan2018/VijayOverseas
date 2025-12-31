@@ -54,7 +54,7 @@
     border: 1.5px solid #d9a06a;
     border-radius: 1rem;
     padding: 2rem;
-    width: max-content;
+    width: auto;
     margin: auto;
 }
 

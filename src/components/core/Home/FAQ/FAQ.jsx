@@ -7,32 +7,32 @@ const questionData = [
     {
         question: "What makes Vijay Overseas different from other jaggery brands?",
         answer:
-            "Vijay Overseas jaggery is an unrefined sweetener made from sugarcane juice without sulphur, bleaching agents or artificial additives. It retains natural minerals like iron, calcium and magnesium, along with a rich caramel-like flavour that refined sugar loses during heavy processing.",
+            "Vijay Overseas stands out through its focus on purity, consistency, and export-grade quality. Our jaggery is produced using carefully selected sugarcane, traditional processing methods, and strict quality checks to ensure a clean taste, rich aroma, and reliable standards across every batch.",
     },
     {
         question: "Is Vijay Overseas a manufacturer or a supplier?",
         answer:
-            "Yes. Our jaggery is produced without the use of sulphur, chemical preservatives, artificial colours or flavours. We focus on traditional processing methods combined with modern hygiene standards to deliver clean, natural sweetness.",
+            "Vijay Overseas operates as both a manufacturer and a supplier. We are directly involved in sourcing, processing, packaging, and distributing jaggery, which allows us to maintain quality control and offer dependable supply to domestic and international buyers.",
     },
     {
         question: "Do you supply jaggery in bulk or for export?",
         answer:
-            "We offer jaggery in classic bricks, cubes and bite-sized pieces. Pack sizes range from small consumer packs to bulk cartons starting from 5 kg, with options for 10 kg and 25 kg packs for retailers and wholesale buyers.",
+            "Yes, we supply jaggery in bulk quantities and cater to export requirements. Our packaging options include 5 kg, 10 kg, and 25 kg packs, designed to meet the needs of wholesalers, retailers, and overseas buyers.",
     },
     {
         question: "How does Vijay Overseas ensure quality consistency?",
         answer:
-            "Yes. We produce fusion jaggery variants blended with natural ingredients such as ginger, sesame, fennel and dry fruits. Custom blends can also be developed based on buyer requirements.",
+            "Quality consistency is ensured through standardized processing, hygienic manufacturing conditions, and routine quality checks at every stage. From raw material selection to final packaging, each batch is monitored to maintain uniform taste, texture, and purity.",
     },
     {
         question: "Does Vijay Overseas support sustainable and ethical practices?",
         answer:
-            "Jaggery provides quick yet steady energy and is often preferred by athletes as a natural alternative to refined sugar. It is commonly used before or after workouts to support endurance and recovery.",
+            "Yes, Vijay Overseas supports sustainable and ethical practices by working closely with farmers, encouraging responsible sourcing, and minimizing unnecessary chemical processing. Our approach prioritizes long-term environmental balance and fair trade relationships.",
     },
     {
         question: "Who typically works with Vijay Overseas?",
         answer:
-            "Jaggery is still a form of sugar and should be consumed in moderation. People with diabetes are advised to consult their healthcare professional before including jaggery in their diet.",
+            "Vijay Overseas works with wholesalers, retailers, food manufacturers, exporters, and distributors who are looking for reliable, high-quality jaggery supply for both domestic markets and international trade.",
     },
 ];
 
