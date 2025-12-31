@@ -25,6 +25,14 @@ export default function Hero() {
             <div className={style.cards}>
                 <div className={style.mainCard}>
                     <div className={style.mainCardContent}>
+                        <h4>JAI SHREE KRISHNA</h4>
+                        <p>
+                            Honoring the legacy of Swargiya Vijay Kumar Ji, whose vision laid the foundation for Hans Heritage&apos;s commitment to purity, sustainability, and innovation in jaggery production.
+                        </p>
+                    </div>
+                </div>
+                {/* <div className={style.mainCard}>
+                    <div className={style.mainCardContent}>
                         <h4>Where Every Bite Feels Special</h4>
                         <p>
                             Crafted from pure sugarcane juice and minimally processed, our
@@ -38,7 +46,7 @@ export default function Hero() {
                     >
                         ▶
                     </div>
-                </div>
+                </div> */}
 
                 <div className={style.sideImage}>
                     <Image src={hero2} alt="hero2" />
