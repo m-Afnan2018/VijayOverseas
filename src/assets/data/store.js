@@ -112,8 +112,8 @@ const storeData = [
         image: image5,
         description: "Premium-quality natural jaggery crafted for global markets, ensuring purity, consistency, and export-ready standards in every batch.",
         table: false,
-        cutPrice: "MRP: ₹155/kg",
-        cta: "₹27,90,000 ( 155/kg)"
+        cutPrice: "MRP: ₹170/kg",
+        cta: "₹150/kg"
     },
 ]
 

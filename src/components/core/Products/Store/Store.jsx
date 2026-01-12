@@ -1,6 +1,24 @@
+'use client'
+
 import style from './Store.module.css'
 import storeData from '@/assets/data/store.js'
 import Image from 'next/image'
+
+const openWhatsApp = (product) => {
+    const phone = "919217848056"; // ← your WhatsApp number (no +, no spaces)
+
+    const message = `
+Hello, I am interested in this product:
+
+Product: ${product.heading}
+Description: ${product.description}
+
+Please share more details.
+    `;
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+    window.open(url, "_blank");
+};
 
 export default function Store() {
     return (
@@ -70,7 +88,7 @@ export default function Store() {
                                 )}
                                 {data.cutPrice && <h6 className={style.cutPrice}>{data.cutPrice}</h6>}
 
-                                {data.cta && <button className={style.cta}>{data.cta}</button>}
+                                {data.cta && <button className={style.cta} onClick={() => openWhatsApp(data)}>{data.cta}</button>}
                             </div>
                         </div>
                     ))}

@@ -1,5 +1,5 @@
 import style from './Store.module.css'
-import storeData from '@/assets/data/store.js'
+import image from '@/assets/images/home/item1.png'
 import Image from 'next/image'
 
 export default function Store() {
@@ -13,7 +13,7 @@ export default function Store() {
             <p>Starting with premium jaggery, we&apos;re building a diverse portfolio of pure, natural food products from India. Click on any category to explore more</p>
 
             <div className={style.card}>
-                <Image src={storeData[0].image} alt={storeData[0].heading} />
+                <Image src={image} alt={'jaggery'} />
                 <h3> jaggery</h3>
                 <p className={style.description}>Pure, chemical-free jaggery in multiple formats—bricks, cubes, and fusion variants. Our flagship product bringing traditional sweetness to modern homes.</p>
 

@@ -29,20 +29,20 @@ export default function ContactUs() {
                 </div>
 
                 {/* RIGHT */}
-                <form className={style.form}>
+                <form className={style.form} action="https://formsubmit.co/info@vijayoverseas.com" method="POST" >
                     <div className={style.row}>
-                        <input type="text" placeholder="First Name" />
-                        <input type="text" placeholder="Last Name" />
+                        <input type="text" name="firstName" placeholder="First Name" />
+                        <input type="text" name="lastName"  placeholder="Last Name" />
                     </div>
 
-                    <input type="email" placeholder="Email Address" />
+                    <input type="email" name="email" placeholder="Email Address" />
 
                     <div className={style.row}>
-                        <input type="text" placeholder="Contact No" />
-                        <input type="text" placeholder="Zip/Postal" />
+                        <input type="text" name="contactNumber" placeholder="Contact No" />
+                        <input type="text" name="zip code" placeholder="Zip/Postal" />
                     </div>
 
-                    <textarea placeholder="Message"></textarea>
+                    <textarea type="message" placeholder="Message"></textarea>
 
                     <button type="submit">Submit</button>
                 </form>

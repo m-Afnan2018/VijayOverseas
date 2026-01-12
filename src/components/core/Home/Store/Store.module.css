@@ -55,6 +55,7 @@
     border-radius: 1rem;
     padding: 2rem;
     width: auto;
+    max-width: 600px;
     margin: auto;
 }
 

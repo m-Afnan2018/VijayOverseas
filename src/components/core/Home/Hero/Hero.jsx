@@ -27,7 +27,7 @@ export default function Hero() {
                     <div className={style.mainCardContent}>
                         <h4>JAI SHREE KRISHNA</h4>
                         <p>
-                            Honoring the legacy of Swargiya Vijay Kumar Ji, whose vision laid the foundation for Hans Heritage&apos;s commitment to purity, sustainability, and innovation in jaggery production.
+                            Honoring the legacy of Swargiya Vijay Kumar Ji, whose vision laid the foundation for Vijay Overseas commitment to purity, sustainability, and innovation in jaggery production.
                         </p>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ export default function Vision() {
         <div className={style.wrapper}>
             <div className={style.content}>
                 <h5>Our Vision & Mission</h5>
-                <h2>BUILDING A GLOBAL BRIDGE OF PURE,<span>NATURAL FOOD</span></h2>
+                <h2>BUILDING A GLOBAL BRIDGE OF PURE, <span>NATURAL FOOD</span></h2>
 
                 <div className={style.block}>
                     <h3>🌟 Our Vision</h3>
