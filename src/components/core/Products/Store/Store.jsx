@@ -3,6 +3,8 @@
 import style from './Store.module.css'
 import storeData from '@/assets/data/store.js'
 import Image from 'next/image'
+import FormPopup from '../../PopupForm/PopupForm';
+import { useState } from 'react';
 
 const openWhatsApp = (product) => {
     const phone = "919217848056"; // ← your WhatsApp number (no +, no spaces)
@@ -21,8 +23,16 @@ Please share more details.
 };
 
 export default function Store() {
+
+    const showTable = false;
+    const [isPopupOpen, setIsPopupOpen] = useState(false);
+
     return (
         <div className={style.container}>
+            <FormPopup
+                isOpen={isPopupOpen}
+                onClose={() => setIsPopupOpen(false)}
+            />
             <section className={style.section}>
                 {/* Header */}
                 <div className={style.header}>
@@ -35,7 +45,7 @@ export default function Store() {
 
                 {/* Cards Grid */}
                 <div className={style.grid}>
-                    {storeData.slice(0, 5).map((data, index) => (
+                    {storeData.slice(0, 4).map((data, index) => (
                         <div className={style.card} key={index}>
                             {/* Ribbon */}
                             {data.offer && (
@@ -92,6 +102,54 @@ export default function Store() {
                             </div>
                         </div>
                     ))}
+
+                    <div className={style.card}>
+                        {/* Image Container */}
+                        <div className={style.imageContainer}>
+                            <div className={style.imageWrap}>
+                                <Image src={storeData[4].image} alt={storeData[4].heading} fill />
+                            </div>
+                        </div>
+
+                        {/* Content Container */}
+                        <div className={style.content}>
+                            {/* Title */}
+                            <h3 className={style.heading}>{storeData[4].heading}</h3>
+
+                            {/* Description */}
+                            <p className={style.description} style={{ fontWeight: '600' }}>{storeData[4].description}</p>
+
+                            {/* Pricing table or MRP */}
+                            {showTable ? (
+                                <table className={style.priceTable}>
+                                    <thead>
+                                        <tr>
+                                            <th style={{ color: '#0EACC3' }}>Product Type</th>
+                                            <th>FOB Price (₹/kg)</th>
+                                            <th>CIF Price (₹/kg)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style={{ color: '#0EACC3' }}>Brick</td>
+                                            <td>₹125</td>
+                                            <td>₹135</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ color: '#0EACC3' }}>Cube</td>
+                                            <td>₹135</td>
+                                            <td>₹145</td>
+                                        </tr>
+                                        <tr>
+                                            <td style={{ color: '#0EACC3' }}>Fusion Cube</td>
+                                            <td>₹150</td>
+                                            <td>₹160</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            ) : <button className={style.cta} onClick={() => setIsPopupOpen(true)}>View Price</button>}
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
