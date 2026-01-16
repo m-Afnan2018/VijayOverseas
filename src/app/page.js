@@ -10,6 +10,7 @@ import Testimonials from "@/components/core/Home/Testimonials/Testimonials";
 import FAQ from "@/components/core/Home/FAQ/FAQ";
 import Blogs from "@/components/core/Home/Blogs/Blogs";
 import Vision from "@/components/core/Home/Vision/Vision";
+import OurTeam from "@/components/core/Home/OurTeam/OurTeam";
 
 export default function Home() {
     return (
@@ -17,6 +18,7 @@ export default function Home() {
             <Hero />
             <Vision />
             <OurStory />
+            <OurTeam />
             <Store />
             <Jaggery />
             <Difference />

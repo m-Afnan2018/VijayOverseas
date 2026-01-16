@@ -46,6 +46,7 @@
     width: 100%;
     border-radius: 1.2rem;
     overflow: hidden;
+    max-height: 650px;
 }
 
 .imageWrap img {
