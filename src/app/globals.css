@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --background: #ffffff;
@@ -34,7 +34,6 @@ a {
 /* CTA */
 button {
   display: block;
-  margin: 0 auto 3rem;
   padding: 0.6rem 1.4rem;
   background: #00b8c8;
   color: #fff;
@@ -48,9 +47,31 @@ button {
   font-weight: 100;
   font-size: 1.125rem;
   letter-spacing: 1px;
+  width: fit-content;
 }
 
 button:hover {
+  opacity: 0.9;
+}
+.button {
+  display: block;
+  padding: 0.6rem 1.4rem;
+  background: #00b8c8;
+  color: #fff;
+  border: none;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 1;
+  font-family: var(--font-reyork);
+  border-radius: 0.5rem;
+  font-weight: 100;
+  font-size: 1.125rem;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+
+.button:hover {
   opacity: 0.9;
 }
 
@@ -62,7 +83,7 @@ h5 {
   letter-spacing: 3px;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
-  color: #2F1908;
+  color: #2f1908;
 }
 
 h2 {
@@ -73,11 +94,11 @@ h2 {
   letter-spacing: -1.8px;
   text-transform: uppercase;
   margin-bottom: 1.8rem;
-  color: #6C3D08;
+  color: #6c3d08;
 }
 
 h2 span {
-  color: #0EACC3;
+  color: #0eacc3;
 }
 
 p {
@@ -88,11 +109,28 @@ p {
   letter-spacing: -0.2px;
   text-align: left;
   vertical-align: middle;
-  color: #462B0D;
+  color: #462b0d;
 }
 
 section {
   width: 100%;
+}
+
+.whatsappBtn {
+  color: transparent;
+  position: fixed;
+  z-index: 10;
+  width: 50px;
+  height: auto;
+  bottom: 25px;
+  right: 25px;
+  border-radius: 100%;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.whatsappBtn:hover {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -104,6 +142,6 @@ section {
     letter-spacing: 0.2px;
     text-transform: uppercase;
     margin-bottom: 1.8rem;
-    color: #6C3D08;
+    color: #6c3d08;
   }
 }

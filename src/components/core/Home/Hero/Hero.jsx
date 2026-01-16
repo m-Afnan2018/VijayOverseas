@@ -18,8 +18,8 @@ export default function Hero() {
                 Bringing India&apos;s finest natural food products to the world. Starting with premium jaggery, we&apos;re committed to purity, sustainability, and traditional wisdom.
             </h5>
             <div className={style.buttons}>
-                <button>Our Story</button>
-                <button>Explore Product</button>
+                <a className='button' href='/about'>Our Story</a>
+                <a className='button' href='/product'>Explore Product</a>
             </div>
 
             <div className={style.cards}>

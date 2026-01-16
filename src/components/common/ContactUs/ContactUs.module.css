@@ -40,6 +40,10 @@
     height: 18px;
 }
 
+.contactItem a{
+    text-transform: lowercase;
+}
+
 /* RIGHT FORM */
 .form {
     display: flex;

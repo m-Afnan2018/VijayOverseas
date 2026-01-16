@@ -4,6 +4,7 @@ import Navbar from "@/components/common/Navbar/Navbar";
 import Footer from "@/components/common/Footer/Footer";
 import ContactUs from "@/components/common/ContactUs/ContactUs";
 import NotificationBar from "@/components/common/NotificationBar/NotificationBar";
+import OverlayButton from "@/components/common/OverlayButtons/OverlayButtons";
 
 const pilatWide = localFont({
     src: [
@@ -42,7 +43,8 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body className={`${reyork.variable} ${pilatWide.variable}`}>
-                <NotificationBar/>
+                <OverlayButton />
+                <NotificationBar />
                 <Navbar />
                 {children}
                 <ContactUs />

@@ -19,12 +19,12 @@ export default function ContactUs() {
 
                     <div className={style.contactItem}>
                         <Image src={callIcon} alt="call-icon" />
-                        <span>+91 +91 9217848056</span>
+                        <a href="tel:919217848056">+91 9217848056</a>
                     </div>
 
                     <div className={style.contactItem}>
                         <Image src={messageIcon} alt="message-icon" />
-                        <span>info@vijayoverseas.com</span>
+                        <a href="mailto:info@vijayoverseas.com">info@vijayoverseas.com</a>
                     </div>
                 </div>
 

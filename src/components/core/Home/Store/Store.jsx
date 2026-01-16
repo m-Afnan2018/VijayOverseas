@@ -18,7 +18,7 @@ export default function Store() {
                 <p className={style.description}>Pure, chemical-free jaggery in multiple formats—bricks, cubes, and fusion variants. Our flagship product bringing traditional sweetness to modern homes.</p>
 
                 <div className={style.cardFooter}>
-                    <button className={style.orderBtn}>Explore Jaggery</button>
+                    <a className={`button ${style.orderBtn}`} href='/product'>Explore Jaggery</a>
                 </div>
             </div>
 

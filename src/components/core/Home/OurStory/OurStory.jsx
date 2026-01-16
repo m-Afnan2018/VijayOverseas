@@ -46,7 +46,7 @@ export default function OurStory() {
                     <h4>Founded by Somya Sharma</h4>
                     <p>Led by founder Somya Sharma, who is deeply committed to sustainable development and pure food production. Every decision we make is rooted in creating long-term value for farmers, communities, and customers worldwide.
                     </p>
-                    <button>Explore Product</button>
+                    <a className='button' href='/about'>Our Story</a>
                 </div>
             </div>
 

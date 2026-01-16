@@ -24,7 +24,7 @@ Please share more details.
 
 export default function Store() {
 
-    const showTable = false;
+    const [showTable, setShowTable] = useState(false);
     const [isPopupOpen, setIsPopupOpen] = useState(false);
 
     return (
@@ -32,6 +32,7 @@ export default function Store() {
             <FormPopup
                 isOpen={isPopupOpen}
                 onClose={() => setIsPopupOpen(false)}
+                setShowTable={setShowTable}
             />
             <section className={style.section}>
                 {/* Header */}
@@ -125,8 +126,8 @@ export default function Store() {
                                     <thead>
                                         <tr>
                                             <th style={{ color: '#0EACC3' }}>Product Type</th>
-                                            <th>FOB Price (₹/kg)</th>
-                                            <th>CIF Price (₹/kg)</th>
+                                            <th style={{ color: '#bd1c1c' }}>FOB Price (₹/kg)</th>
+                                            <th style={{ color: '#bd1c1c' }}>CIF Price (₹/kg)</th>
                                         </tr>
                                     </thead>
                                     <tbody>

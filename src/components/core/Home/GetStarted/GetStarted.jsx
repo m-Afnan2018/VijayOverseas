@@ -22,8 +22,8 @@ export default function GetStarted() {
                 <p>Hygienic handling, reliable specifications, and professional packaging make our products suitable for both domestic and international markets with confidence.</p>
 
                 <div className={style.buttons}>
-                    <button>Our Story</button>
-                    <button>Explore Product</button>
+                    <a className="button" href="/about">Our Story</a>
+                    <a className="button" href="/product">Explore Product</a>
                 </div>
             </div>
         </section>

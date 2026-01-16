@@ -1,37 +1,46 @@
-// components/FormPopup.tsx
 'use client';
 
 import { useState } from 'react';
 import style from './PopupForm.module.css';
-import callIcon from "@/assets/images/common/phone.svg";
-import messageIcon from "@/assets/images/common/mail.svg";
-import Image from "next/image";
 
-export default function FormPopup({ isOpen, onClose }) {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
+export default function FormPopup({ isOpen, onClose, setShowTable }) {
+
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setLoading(true);
+        setError('');
 
-        // Your form submission logic here
-        console.log('Form submitted:', formData);
+        const formData = new FormData(e.currentTarget);
 
-        // Close popup after submission
-        onClose();
+        try {
+            const response = await fetch(
+                "https://formsubmit.co/ajax/info@vijayoverseas.com",
+                {
+                    method: "POST",
+                    headers: {
+                        'Accept': 'application/json'
+                    },
+                    body: formData
+                }
+            );
 
-        // Reset form
-        setFormData({ name: '', email: '', message: '' });
-    };
+            const jsonResponse = await response.json();
 
-    const handleChange = (e) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value
-        });
+            if (jsonResponse.success === 'true') {
+                localStorage.setItem('showTable', 'true');
+                setShowTable(true);
+                onClose();
+            } else {
+                setError('Something went wrong. Please try again.');
+            }
+        } catch (err) {
+            setError('Network error. Please check your connection.');
+        } finally {
+            setLoading(false);
+        }
     };
 
     if (!isOpen) return null;
@@ -41,44 +50,41 @@ export default function FormPopup({ isOpen, onClose }) {
             <div className={style.backdrop} onClick={onClose} />
 
             <div className={style.modal}>
-                {/* LEFT */}
-                <div className={style.left}>
-                    <h2>
-                        Get In <span>Touch !</span>
-                    </h2>
-
-                    <p>
-                        Experience the purity of nature with Vijay Overseas. Whether you&apos;re looking for premium jaggery for your home, bulk orders for your business, or export inquiries—we&apos;re here to help. Reach out today!
-                    </p>
-
-                    <div className={style.contactItem}>
-                        <Image src={callIcon} alt="call-icon" />
-                        <span>+91 +91 9217848056</span>
-                    </div>
-
-                    <div className={style.contactItem}>
-                        <Image src={messageIcon} alt="message-icon" />
-                        <span>info@vijayoverseas.com</span>
-                    </div>
-                </div>
-
-                {/* RIGHT */}
-                <form className={style.form} action="https://formsubmit.co/info@vijayoverseas.com" method="POST" >
-                    <div className={style.row}>
-                        <input type="text" name="firstName" placeholder="First Name" />
-                        <input type="text" name="lastName"  placeholder="Last Name" />
-                    </div>
-
-                    <input type="email" name="email" placeholder="Email Address" />
+                <form className={style.form} onSubmit={handleSubmit}>
 
                     <div className={style.row}>
-                        <input type="text" name="contactNumber" placeholder="Contact No" />
-                        <input type="text" name="zip code" placeholder="Zip/Postal" />
+                        <input name="contactPerson" required placeholder="Contact Person" />
+                        <input name="phoneNumber" required placeholder="Phone Number" />
                     </div>
 
-                    <textarea type="message" placeholder="Message"></textarea>
+                    <input type="email" name="email" required placeholder="Email Address" />
 
-                    <button type="submit">Submit</button>
+                    <div className={style.row}>
+                        <input name="companyName" placeholder="Company Name" />
+                        <input name="country" placeholder="Country" />
+                    </div>
+
+                    {/* FormSubmit options */}
+                    <input type="hidden" name="_captcha" value="false" />
+                    <input type="hidden" name="_subject" value="New Enquiry" />
+
+                    {/* Error Message */}
+                    {error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>}
+
+                    <div className={style.row}>
+                        <button
+                            type="button"
+                            onClick={onClose}
+                            disabled={loading}
+                            style={{ backgroundColor: '#bd1c1c', margin: '0' }}
+                        >
+                            Close
+                        </button>
+
+                        <button type="submit" disabled={loading} style={{ margin: '0' }}>
+                            {loading ? 'Submitting...' : 'View'}
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
