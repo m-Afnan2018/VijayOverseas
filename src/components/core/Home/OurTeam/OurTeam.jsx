@@ -62,7 +62,8 @@ export default function OurTeam() {
         ))}
 
         <h2 className={styles.mainTitle}>MEET OUR <span>TEAM</span></h2>
-
+        
+        <Image width={'50'} height={'50'} src={teams[current].image} alt={teams[current].name} className={styles.mainImage} />
         <div className={styles.container}>
             <button className={`${styles.arrowBtn} ${styles.left}`} onClick={prev} aria-label="Previous team member">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -97,7 +98,6 @@ export default function OurTeam() {
                 </div>
             ))}
         </div>
-        <Image width={'50'} height={'50'} src={teams[current].image} alt={teams[current].name} className={styles.mainImage} />
 
     </div>
 }

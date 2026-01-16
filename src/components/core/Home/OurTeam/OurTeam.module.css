@@ -127,7 +127,7 @@
 .thumbnails {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 100px;
     padding: 20px;
     background: linear-gradient(90deg, transparent, #0eacc34d);
@@ -181,68 +181,26 @@
     line-height: 1.5;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-    .content {
-        gap: 40px;
-    }
-
+/* Tablet devices (max-width: 1024px) */
+@media (max-width: 1024px) {
     .mainImage {
-        width: 300px;
-        height: 380px;
-    }
-}
-
-@media (max-width: 968px) {
-    .content {
-        flex-direction: column-reverse;
-        gap: 40px;
+        height: 700px;
+        width: 400px;
+        right: calc((100vw - 900px) / 2);
     }
 
     .details {
-        max-width: 100%;
-    }
-
-    .mainImage {
-        width: 280px;
-        height: 350px;
-    }
-
-    .container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .arrowBtn {
-        position: static;
-    }
-
-    .thumbnails {
-        gap: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .mainTitle {
-        font-size: 2rem;
-        margin-bottom: 40px;
-    }
-
-    .name {
-        font-size: 1.6rem;
-    }
-
-    .designation {
-        font-size: 1rem;
+        max-width: 500px;
+        margin-top: 80px;
     }
 
     .description {
+        min-height: 350px;
         font-size: 0.9rem;
     }
 
-    .mainImage {
-        width: 250px;
-        height: 320px;
+    .thumbnails {
+        padding: 20px calc((100vw - 900px) / 2);
     }
 
     .thumbnail img {
@@ -251,43 +209,166 @@
     }
 
     .thumbnailName {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 
     .thumbnailDesignation {
         font-size: 0.7rem;
+        max-width: 120px;
     }
 }
 
-@media (max-width: 480px) {
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
     .OurTeam {
-        padding: 40px 15px;
+        padding-top: 40px;
     }
 
-    .mainTitle {
-        font-size: 1.5rem;
+    .container {
+        flex-direction: column;
+        padding: 0 15px;
+        gap: 30px;
     }
 
-    .name {
-        font-size: 1.4rem;
+    .details {
+        margin-top: 20px;
+        margin-right: 0;
+        max-width: 100%;
+        order: 2;
+    }
+
+    .description {
+        min-height: auto;
+        font-size: 0.9rem;
     }
 
     .mainImage {
-        width: 200px;
-        height: 280px;
+        position: relative;
+        height: 500px;
+        width: 100%;
+        right: auto;
+        order: 1;
+        margin: 0 auto;
     }
 
     .arrowBtn {
-        width: 40px;
-        height: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 45px;
+        height: 45px;
+    }
+
+    .left {
+        left: 10px;
+    }
+
+    .right {
+        right: 10px;
     }
 
     .thumbnails {
-        gap: 15px;
+        margin-top: 50px;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
     }
 
     .thumbnail img {
         width: 70px;
         height: 70px;
+    }
+
+    .thumbnailInfo {
+        margin-top: 8px;
+    }
+
+    .thumbnailName {
+        font-size: 0.8rem;
+    }
+
+    .thumbnailDesignation {
+        font-size: 0.65rem;
+        max-width: 100px;
+    }
+
+    .mainTitle {
+        font-size: 1.5rem;
+        padding: 0 20px;
+    }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .OurTeam {
+        padding-top: 30px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .details {
+        padding: 0 10px;
+    }
+
+    .name {
+        font-size: 1.3rem;
+    }
+
+    .designation {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 0.85rem;
+        line-height: 1.6;
+    }
+
+    .mainImage {
+        height: 400px;
+    }
+
+    .arrowBtn {
+        display: none;
+    }
+
+    .arrowBtn svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .thumbnails {
+        margin-top: 40px;
+        padding: 15px 10px;
+        gap: 15px;
+    }
+
+    .thumbnail {
+        flex: 0 0 calc(50% - 10px);
+    }
+
+    .thumbnail img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .thumbnailName {
+        font-size: 0.75rem;
+    }
+
+    .thumbnailDesignation {
+        font-size: 0.6rem;
+        max-width: 90px;
+    }
+
+    .mainTitle {
+        font-size: 1.3rem;
+    }
+
+    .lines.horizontal,
+    .lines.verticle {
+        display: none;
     }
 }
