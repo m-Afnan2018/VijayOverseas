@@ -12,6 +12,13 @@ import Blogs from "@/components/core/Home/Blogs/Blogs";
 import Vision from "@/components/core/Home/Vision/Vision";
 import OurTeam from "@/components/core/Home/OurTeam/OurTeam";
 
+export const metadata = {
+    title: "Premium Jaggery Exporter from India",
+    description:
+        "Vijay Overseas exports high-quality Indian jaggery including cubes, bricks, and fusion cubes to global markets.",
+};
+
+
 export default function Home() {
     return (
         <div className={styles.page}>
